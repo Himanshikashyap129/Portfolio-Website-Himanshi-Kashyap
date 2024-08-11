@@ -163,22 +163,22 @@ const Skill = () => {
       <Footer>
         <FooterItem>
           <h4>About</h4>
-          <p>Brief description about you or your work.</p>
+          <p>I am a frontend developer. I have some basic knowledge about MERN stack and I am currently making projects using MERN stack.</p>
         </FooterItem>
         <FooterItem>
           <h4>Skills</h4>
-          <a href="/">Photoshop</a>
+          <a href="/">Data Structures</a>
           <a href="/">React</a>
           <a href="/">HTML5</a>
           <a href="/">CSS</a>
         </FooterItem>
         <FooterItem>
           <h4>Work</h4>
-          <p>Link to your portfolio, blog, or other content.</p>
+          <p>I am currently working on making and e-commerce website using MERN stack Development.</p>
         </FooterItem>
         <FooterItem>
           <h4>Have a Question?</h4>
-          <p>Contact details or a brief CTA.</p>
+          <p>Feel free to contact with me on my LinkedIn page.</p>
           <SocialIcons>
             <a href="/"><i className="fab fa-facebook"></i></a>
             <a href="/"><i className="fab fa-twitter"></i></a>
