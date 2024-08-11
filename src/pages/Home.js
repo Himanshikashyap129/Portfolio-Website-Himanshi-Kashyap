@@ -6,7 +6,7 @@ const Home = () => {
     <Container>
       <Content>
         <GreetingText>Hello, It's Me</GreetingText>
-        <NameText>Himasnhi Kashyap</NameText>
+        <NameText>Himanshi Kashyap</NameText>
         <JobTitle>And I'm a <span>ReactJs Developer</span></JobTitle>
         <Description>
         👋 Hi, I'm Himanshi Kashya, a passionate ReactJS Developer! I've created various projects like a Calculator, Temperature Converter, Note-Taking Apps, and a News App.
