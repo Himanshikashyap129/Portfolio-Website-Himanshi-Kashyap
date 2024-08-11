@@ -115,7 +115,7 @@ const Skill = () => {
     <SkillsContainer>
       <Title>My Skills</Title>
       <Subtitle>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec faucibus tincidunt vel velit eget aliquam sapien.
+        In this section I have mention my skills. I have some technical skills which I used to make web development projects. Soft skills helps me in day to day communication with my friends other person within college or organisation.
       </Subtitle>
 
       <SkillBar>
