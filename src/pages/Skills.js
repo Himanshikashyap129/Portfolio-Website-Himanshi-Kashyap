@@ -133,8 +133,7 @@ const Skill = () => {
     <SkillsContainer>
       <Title>My Skills</Title>
       <Subtitle>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec faucibus tincidunt vel velit eget aliquam sapien.
-      </Subtitle>
+There i have showcase my skills.      </Subtitle>
 
       <SkillBar>
         <SkillName>Data Structures</SkillName>
