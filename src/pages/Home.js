@@ -16,10 +16,10 @@ const Home = () => {
 🌱 I'm always excited to learn and explore new technologies!
         </Description>
         <SocialLinks>
-          <SocialLink href="#"><i className="fab fa-facebook-f"></i></SocialLink>
-          <SocialLink href="#"><i className="fab fa-twitter"></i></SocialLink>
-          <SocialLink href="#"><i className="fab fa-instagram"></i></SocialLink>
-          <SocialLink href="#"><i className="fab fa-linkedin-in"></i></SocialLink>
+          <SocialLink href="https://www.facebook.com/profile.php?id=61564109703678"><i className="fab fa-facebook-f"></i></SocialLink>
+          <SocialLink href="https://x.com/Himansh21685821"><i className="fab fa-twitter"></i></SocialLink>
+          <SocialLink href="https://www.instagram.com/___h.i.m.a.n.s.h.i_/?hl=en"><i className="fab fa-instagram"></i></SocialLink>
+          <SocialLink href="https://www.linkedin.com/in/himanshi-kashyap-6b178624a/"><i className="fab fa-linkedin-in"></i></SocialLink>
         </SocialLinks>
         <DownloadButton href="#">Download CV</DownloadButton>
       </Content>
