@@ -1,7 +1,18 @@
-// About.js
 import React from 'react';
-import styled from 'styled-components';
-import { FaMapMarkerAlt, FaLanguage } from 'react-icons/fa'; // Import the icons
+import styled, { keyframes } from 'styled-components';
+import { FaMapMarkerAlt, FaLanguage } from 'react-icons/fa';
+
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const Container = styled.div`
   background-color: #0B0C10; 
@@ -20,6 +31,7 @@ const ProfileSection = styled.div`
   width: 80%;
   max-width: 1200px;
   margin: 40px;
+  animation: ${fadeInUp} 0.6s ease-out;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -101,6 +113,14 @@ const SkillCard = styled.div`
   width: 30%;
   margin-bottom: 20px;
   text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: ${fadeInUp} 0.6s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  }
 
   @media (max-width: 768px) {
     width: 80%;
@@ -195,7 +215,7 @@ const About = () => {
             <SkillItem>Visual Studio Code</SkillItem>
             <SkillItem>Git and Github</SkillItem>
             <SkillItem>MongoDB</SkillItem>
-            <SkillItem>Intellij Idea</SkillItem>
+            <SkillItem>IntelliJ IDEA</SkillItem>
           </SkillList>
         </SkillCard>
       </SkillsSection>
