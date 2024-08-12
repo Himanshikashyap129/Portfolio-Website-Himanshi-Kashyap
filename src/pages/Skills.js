@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const SkillsContainer = styled.div`
   padding: 50px 20px;
@@ -22,6 +22,15 @@ const Subtitle = styled.p`
   line-height: 1.6;
 `;
 
+const grow = keyframes`
+  0% {
+    width: 0;
+  }
+  100% {
+    width: ${(props) => props.level || '0%'};
+  }
+`;
+
 const SkillBar = styled.div`
   display: flex;
   justify-content: space-between;
@@ -39,21 +48,31 @@ const SkillName = styled.span`
   text-align: left;
 `;
 
-
 const SkillLevelContainer = styled.div`
   flex: 4;
   background-color: #0b0c10;
   border-radius: 5px;
   overflow: hidden;
   margin-left: 10px;
+  position: relative;
 `;
 
 const SkillLevel = styled.div`
   height: 20px;
   background-color: #66fcf1;
-  width: ${props => props.level || '0%'};
+  width: ${(props) => props.level || '0%'};
+  animation: ${grow} 2s ease-in-out;
 `;
 
+const SkillPercentage = styled.span`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #0b0c10;
+  font-weight: bold;
+`;
 
 const Footer = styled.div`
   display: flex;
@@ -92,7 +111,6 @@ const FooterItem = styled.div`
   }
 `;
 
-
 const SocialIcons = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -115,48 +133,60 @@ const Skill = () => {
     <SkillsContainer>
       <Title>My Skills</Title>
       <Subtitle>
-        In this section I have mention my skills. I have some technical skills which I used to make web development projects. Soft skills helps me in day to day communication with my friends other person within college or organisation.
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec faucibus tincidunt vel velit eget aliquam sapien.
       </Subtitle>
 
       <SkillBar>
         <SkillName>Data Structures</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="90%"></SkillLevel>
+          <SkillLevel level="90%">
+            <SkillPercentage>90%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
       
       <SkillBar>
         <SkillName>React</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="70%"></SkillLevel>
+          <SkillLevel level="70%">
+            <SkillPercentage>70%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
 
       <SkillBar>
         <SkillName>HTML5</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="80%"></SkillLevel>
+          <SkillLevel level="80%">
+            <SkillPercentage>80%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
 
       <SkillBar>
         <SkillName>CSS</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="80%"></SkillLevel>
+          <SkillLevel level="80%">
+            <SkillPercentage>80%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
 
       <SkillBar>
         <SkillName>Databases</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="60%"></SkillLevel>
+          <SkillLevel level="60%">
+            <SkillPercentage>60%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
 
       <SkillBar>
         <SkillName>JavaScript</SkillName>
         <SkillLevelContainer>
-          <SkillLevel level="50%"></SkillLevel>
+          <SkillLevel level="50%">
+            <SkillPercentage>50%</SkillPercentage>
+          </SkillLevel>
         </SkillLevelContainer>
       </SkillBar>
 
@@ -174,16 +204,16 @@ const Skill = () => {
         </FooterItem>
         <FooterItem>
           <h4>Work</h4>
-          <p>I am currently working on making and e-commerce website using MERN stack Development.</p>
+          <p>I am currently working on making an e-commerce website using MERN stack development.</p>
         </FooterItem>
         <FooterItem>
           <h4>Have a Question?</h4>
-          <p>Feel free to contact with me on my Social Media.</p>
+          <p>Feel free to contact me on my social media.</p>
           <SocialIcons>
-            <a href="/"><i className="fab fa-facebook"></i></a>
-            <a href="/"><i className="fab fa-twitter"></i></a>
-            <a href="/"><i className="fab fa-linkedin"></i></a>
-            <a href="/"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourprofile"><i className="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourprofile"><i className="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile"><i className="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/yourprofile"><i className="fab fa-instagram"></i></a>
           </SocialIcons>
         </FooterItem>
       </Footer>
