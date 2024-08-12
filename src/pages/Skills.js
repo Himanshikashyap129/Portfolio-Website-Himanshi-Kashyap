@@ -178,7 +178,7 @@ const Skill = () => {
         </FooterItem>
         <FooterItem>
           <h4>Have a Question?</h4>
-          <p>Feel free to contact with me on my LinkedIn page.</p>
+          <p>Feel free to contact with me on my Social Media.</p>
           <SocialIcons>
             <a href="/"><i className="fab fa-facebook"></i></a>
             <a href="/"><i className="fab fa-twitter"></i></a>
